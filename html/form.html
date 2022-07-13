@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <select name="ass" id="option" class="option">
+           <option value="select">select</option> 
+           <option value="ass1">ass1</option> 
+           <option value="ass2">ass2</option> 
+        </select>
+        <div>
+            <button id="submit" class="submit">Submit</button>
+        </div>
+        
+    </div>
+    <script>
+        document.getElementById("option").addEventListener('change', () => {
+            var button=document.getElementById("submit");
+        var options=document.getElementById("option").value;
+            if (options === "ass1") {
+        button.disabled = true;
+        // alert("ass1");
+        } else {
+            button.disabled = false;
+            // alert("ass");
+         }
+        })
+    </script>
+</body>
+</html>
+
+;

@@ -1,0 +1,12 @@
+#rev{
+   display: none;
+   color: rgb(218, 16, 117);
+}
+#rn{
+    background-color: black;
+    color: yellow;
+}
+#rn:focus{
+    background-color: black;
+    color: white;
+}

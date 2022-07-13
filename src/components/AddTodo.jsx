@@ -1,0 +1,17 @@
+import { useState } from "react";
+
+const AddTodo=(props)=>{
+    // const[todo,settodo]=useState(props.todoItem);
+    
+    function handleAdd(){
+        var newTodo=document.getElementById("todoitem").value;
+       props.state([...props.todoItem,newTodo]);
+        }
+    return(
+        <div>
+            <input type="text" id="todoitem" />
+            <button className="add" onClick={handleAdd}>Add</button>
+        </div>
+    )
+}
+export default AddTodo;
